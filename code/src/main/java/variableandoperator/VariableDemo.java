@@ -1,5 +1,7 @@
+package variableandoperator;
+
 /**
- * @ClassName: VariableDemo
+ * @ClassName: operator.VariableDemo
  * @desc:
  * @version:
  * @author: xcg
@@ -16,6 +18,7 @@ public class VariableDemo {
     double d;
     boolean flag;
     char c;
+
     public static void main(String[] args) {
         VariableDemo variable = new VariableDemo();
         System.out.println("byte = " + variable.b);
@@ -26,6 +29,6 @@ public class VariableDemo {
         System.out.println("double = " + variable.d);
         System.out.println("boolean = " + variable.flag);
         System.out.println("char = " + variable.c);
-        System.out.println((int)variable.c);
+        System.out.println((int) variable.c);
     }
 }

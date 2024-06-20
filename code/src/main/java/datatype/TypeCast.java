@@ -1,5 +1,7 @@
+package datatype;
+
 /**
- * @ClassName: TypeCast
+ * @ClassName: datatype.TypeCast
  * @desc: 类型转换的演示
  * 强制类型转换
  * 自动类型转换

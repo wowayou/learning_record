@@ -1,5 +1,7 @@
+package datatype;
+
 /**
- * @ClassName: DataType
+ * @ClassName: datatype.DataType
  * @desc:
  * @version:
  * @author: xcg
