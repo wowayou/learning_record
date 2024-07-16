@@ -29,7 +29,7 @@ public class TypeCast {
         System.out.println(num2);
         System.out.println("========");
 
-        int unit = 20_0000_0000; // JDK 7 提供的新特性, 可以在数字中加下划线分割; 输出的时候并不会输出
+        int unit = 20_0000_0000; // JDK 7 提供的新特性, 可以在数字中加下划线分割; 输出的时候并不会输出下划线
         System.out.println("unit = " + unit);
         int years = 10;
         int total = unit * years;
