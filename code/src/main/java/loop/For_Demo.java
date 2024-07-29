@@ -20,11 +20,23 @@ public class For_Demo {
 //        }
 
         // 2. 用 while 或 for 循环输出 1-1000 之间能被 5 整除的数，并且每行输出 3 个
-        outputMultiplesOfFive();
+//        outputMultiplesOfFive();
 
         // 3. 打印九九乘法表
         // 考察如何拆分问题
 //        multiplicationTable();
+        // 打印 101-150 之间的所有质数(用一用 label
+//        Java 中的 label 主要用于控制多重循环中的跳转操作。label 是给代码块命名，使得可以在某些条件下跳出多重嵌套循环或块语句。
+        // 标签作用于其后紧跟的循环或代码块。
+        // break label：跳出标签指定的循环或代码块。continue label：跳转到标签指定的循环的下一次迭代。
+        outer: for (int i = 101; i < 151; i++) {
+            for (int j = 2; j < i / 2; j++) {
+                if (i % j == 0) {
+                    continue outer;
+                }
+            }
+            System.out.print(i + " ");
+        }
 
     }
 
