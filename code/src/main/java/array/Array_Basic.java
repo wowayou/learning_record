@@ -1,5 +1,7 @@
 package array;
 
+import com.sun.corba.se.impl.ior.ObjectIdImpl;
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -33,5 +35,19 @@ public class Array_Basic {
         int[] choices;
         choices = new int[10]; // 动态初始化
         System.out.println("choices[0] = " + choices[0]);
+        int[] reverse = reverse(bikes);
+        System.out.println("========================");
+        for (int i : reverse) {
+            System.out.println(i);
+        }
+    }
+
+    private static int[] reverse(int[] arrays) {
+        int len = arrays.length;
+        int[] result = new int[len];
+        for (int i = 0, j = len-1; i < len; i++, j--) {
+            result [j] = arrays[i];
+        }
+        return result;
     }
 }
