@@ -20,20 +20,29 @@ public class Expand {
 
         /**
          * 稀疏数组
+         * 压缩 节省空间
+         * 记录总的行列数 非零值的坐标及值 距离: 五子棋
+         * 稀疏数组  第几行 共几行 共几列 非零值的个数
+         * 第几个有效值 [0] 11 11 n // [0] 相当于表头
+         * 第一个有效值 [1]
+         * ……
+         * 大概是这样
+         * 普通数组 -> 稀疏数组 -> 普通数组
          */
+        // 先这样
     }
 
     private static void bubbleSort(int[] nums) {
-        // 第一次需要比较的次数, 之后每轮都比上一轮少一次 直到0(一次都不需要比较)
+        // 需要比较 len - 1 轮, 每轮比较 len - 1 - i 次；
         int len = nums.length;
-        for(int i =0; i < len; i++) {
-            boolean flag = false; // 优化：如果提前排好序了 就提前跳出循环!
-            for (int j = 0; j < len - 1; j ++) { // 最后一轮一定会跳出
+        for (int i = 0; i < len - 1; i++) {
+            boolean flag = false; // 对冒泡排序的优化：如果提前排好序了 就提前跳出循环!
+            for (int j = 0; j < len - 1 - i; j++) { // 最后一轮一定会跳出
                 int temp;
-                if (nums[j] > nums[j+1]) {
+                if (nums[j] > nums[j + 1]) {
                     temp = nums[j];
-                    nums[j] = nums[j+1];
-                    nums[j+1] = temp;
+                    nums[j] = nums[j + 1];
+                    nums[j + 1] = temp;
                     flag = true;
                 }
             }
