@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * @ClassName: Expand
- * @desc: 数组扩展
+ * @desc: 数组知识的扩展
  * @version:
  * @author: xcg
  * @date: 2024/8/19 21:20
