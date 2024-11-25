@@ -9,7 +9,16 @@ package variableandoperator;
  * @since: jdk8
  */
 public class Operator {
-    public static void main(String[] args) {
+
+    public void selfIncrement() {
+        int m = 10;
+        int a;
+//        a = m++;
+        a = ++m;
+        System.out.println("a = " + a);
+        System.out.println("m = " + m);
+    }
+/*    public static void main(String[] args) {
         byte a = 10;
         short b = 20;
         int c = 30;
@@ -26,5 +35,5 @@ public class Operator {
         String s1 = a + b + ""; // 30
         System.out.println(s);
         System.out.println(s1);
-    }
+    }*/
 }

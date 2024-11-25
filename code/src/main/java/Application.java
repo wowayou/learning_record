@@ -1,4 +1,6 @@
-package oop;
+import exception.HandleException;
+import string.Demo01;
+import variableandoperator.Operator;
 
 /**
  * @ClassName: Application
@@ -11,13 +13,6 @@ package oop;
 public class Application {
     // 一个项目中只保留一个 main() 方法
     public static void main(String[] args) {
-        Pet dog = new Pet();
-        System.out.println(dog.name);
-
-        Pet cat = new Pet();
-        cat.name = "我是猫";
-
-        dog.shout(dog);
-        dog.shout(cat);
+        new Operator().selfIncrement();
     }
 }

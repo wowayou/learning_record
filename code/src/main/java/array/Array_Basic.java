@@ -31,6 +31,7 @@ public class Array_Basic {
 
         // 数组的初始化；初始化之后才有默认值
         int[] bikes = {1, 2, 3}; // 静态初始化
+        System.out.println(bikes[3]); // 数组下标越界异常
         System.out.println("bikes[0] = " + bikes[0]);
         int[] choices;
         choices = new int[10]; // 动态初始化

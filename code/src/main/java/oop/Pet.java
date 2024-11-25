@@ -24,3 +24,14 @@ public class Pet {
         System.out.println(pet.name + " 在叫");
     }
 }
+
+/*
+Pet dog = new Pet();
+        System.out.println(dog.name);
+
+        Pet cat = new Pet();
+        cat.name = "我是猫";
+
+        dog.shout(dog);
+        dog.shout(cat);
+ */
